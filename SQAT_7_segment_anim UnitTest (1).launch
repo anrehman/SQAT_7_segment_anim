@@ -15,4 +15,5 @@
 <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="SQAT_7_segment_anim"/>
 <stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="com.crt.advproject.config.exe.debug.1516167990.1445117969"/>
 <booleanAttribute key="org.eclipse.cdt.launch.use_terminal" value="false"/>
+<stringAttribute key="process_factory_id" value="org.eclipse.cdt.dsf.gdb.GdbProcessFactory"/>
 </launchConfiguration>

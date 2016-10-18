@@ -27,6 +27,7 @@ using ::testing::Test;
  * GoogleTest test-class for SWM testing
  *
  **********************************************************************/
+// test driver
 class ut_SWM : public Test
 {
 public:
@@ -130,8 +131,8 @@ TEST_F( ut_SWM, correct_SWM_initialization_for_I2C_pins )
 	int i2c_sda_pin = get_I2C_SDA_pin();
 	int i2c_scl_pin = get_I2C_SCL_pin();
 
-	EXPECT_EQ( 10, i2c_sda_pin );
-	EXPECT_EQ( 11, i2c_scl_pin );
+	EXPECT_EQ( 11, i2c_sda_pin );
+	EXPECT_EQ( 10, i2c_scl_pin );
 	EXPECT_EQ( 0xffffffb3UL, pLPC_SWM->PINENABLE0);
 }
 

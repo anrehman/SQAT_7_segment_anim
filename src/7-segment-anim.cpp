@@ -38,10 +38,10 @@ int main(void)
 #endif
 
     uint32_t frame [] = {
-    		0x80000000,
-			0x00800000,
-			0x00008000,
-			0x00000080
+    		0x01010000,
+			0x00010100,
+			0x00000101,
+			0x00000001
     };
 
     // TODO: check return value

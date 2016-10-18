@@ -157,3 +157,14 @@ TEST_F( unittest_DISP, colon_is_not_part_of_frame_data )
 	EXPECT_EQ( 10, mRc );
 	EXPECT_EQ( (char)0x00, get_i2c_buffer_char(5) );	//
 }
+
+TEST_F( unittest_DISP, animation_check_frame_data )
+{
+	mRc = DISP_test_namespace::DISP_show_frame( 0x01010000 );
+	EXPECT_EQ( 10, mRc );
+
+	EXPECT_EQ( (char)0x01, get_i2c_buffer_char(1) );
+	EXPECT_EQ( (char)0x01, get_i2c_buffer_char(3) );
+	EXPECT_EQ( (char)0x00, get_i2c_buffer_char(7) );
+	EXPECT_EQ( (char)0x00, get_i2c_buffer_char(9) );
+}
